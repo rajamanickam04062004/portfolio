@@ -221,7 +221,9 @@ footer {
 /* Responsive for Mobile (Max width 480px) */
 @media only screen and (max-width: 480px) {
     footer {
-      
+      flex-direction: row;
+        padding: 15px; 
+        margin-top: 10%;
     }
 
     .foothead h1 {
@@ -230,7 +232,7 @@ footer {
     }
 
     .fn {
-        flex-direction: column;
+        flex-direction:row;
         align-items: center;
     }
 
