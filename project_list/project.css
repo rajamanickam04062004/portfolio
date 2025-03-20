@@ -38,7 +38,11 @@ li:hover{
     transition: 0.5s;
 }
 @media only screen and (max-width:480px) {
-    body{
-        display:block;
+    p{
+        margin: 30px;
+        letter-spacing:2px;
+        font-size:large;
+        color: #0AFF9D; /* Neon Green */
+        text-shadow: 0px 0px 10px rgba(10, 255, 157, 0.8);
     }
     }
