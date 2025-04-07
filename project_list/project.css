@@ -4,11 +4,20 @@ body {
     font-family: 'Monoton', cursive; /* Stylish neon-like font */
    
 }
+@keyframes h {
+    from{
+        transform: translateX(900px);
+    }
+  }
 h1{
+    animation-name:h ;
+    animation-duration: 0.8s;
     color: #0AFF9D; /* Neon Green */
     text-shadow: 10px 10px 20px rgba(238, 6, 6, 0.8);
 }
 p{
+    animation-name:h ;
+    animation-duration: 1s;
     margin: 30px;
     letter-spacing: 15px;
     font-size:large;
@@ -19,6 +28,8 @@ p{
     margin: 40px;
 }
 li{
+    animation-name:h ;
+    animation-duration: 1.5s;
     text-decoration: none;
     border: 1px solid red;
     padding: 20px 40px;
