@@ -1,0 +1,281 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-family: "Sofia", sans-serif;
+    font-size: 17px;
+  }
+  
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .name h2{
+    animation-name:h ;
+    animation-duration: 0.6s;
+  }
+  @keyframes h {
+    from{
+        transform: translateX(900px);
+    }
+  }
+  .name span {
+    color: green;
+  }
+  
+  .menu {
+    cursor: pointer;
+    z-index: 1000;
+    animation-name:h ;
+    animation-duration: 0.8s;
+  }
+  .menu:hover #top{
+  display: block;
+  }
+  
+  
+  .top {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: black;
+    z-index: 999;
+    padding: 10px;
+    width: auto;
+    display: none;
+    box-shadow: 0 0 10px green;
+    
+  }
+  
+  .top p {
+    padding: 12px;
+  }
+  .top p:hover{
+    background-color: green;
+    color: white;
+  }
+  
+  .top a {
+    color: white;
+  }
+  
+  .left {
+    float: left;
+    width: 30%;
+    margin-left: 20%;
+    margin-top: 120px;
+    animation-name:h ;
+    animation-duration: 1s;
+  }
+  
+  .right {
+    width: auto;
+  }
+  
+  .right img {
+    border-radius: 50%;
+    width: 30%;
+    border: 1px solid green;
+    margin-top: 70px;
+    box-shadow: 19px 10px 10px green;
+    animation-name:h ;
+    animation-duration: 1.4s;
+
+  }
+  
+  .about {
+    margin-top: 6%;
+    animation-name:h ;
+    animation-duration: 1s;
+  }
+  
+  .about p {
+    letter-spacing: 2px;
+    line-height: 25px;
+    border-top: 3px dotted green;
+    border-bottom: 3px dotted green;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: black;
+    color: white;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: green;
+  }
+  
+  .develop {
+    padding: 30px;
+    border: 2px solid green;
+    color: green;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  .develop:hover {
+    background-color: green;
+    color: black;
+    border: 2px solid red;
+  }
+  
+  /* Media queries */
+  @media only screen and (max-width: 600px) {
+  
+    .top {
+      right: 10px;
+      top: 60px;
+      display: none;
+    }
+  
+    .menu {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .top p {
+      padding: 6px;
+      line-height: 16px;
+    }
+  
+    .left {
+      margin-left: 5%;
+      width: 90%;
+    }
+  
+    .left p {
+      line-height: 40px;
+    }
+  
+    .right img {
+      width: 70%;
+      margin-left: 10%;
+      display: block;
+    }
+  
+    .about {
+      margin-top: 6%;
+      margin-left: 2%;
+      width: 90%;
+    }
+  
+    .about p {
+      line-height: 30px;
+      padding: 20px;
+    }
+  
+    button {
+      padding: 10px 30px;
+      font-size: 16px;
+    }
+  
+    .develop {
+      width: 80%;
+      padding: 20px;
+      margin: 10% auto;
+    }
+  
+    .develop h1 {
+      font-size: 18px;
+    }
+  
+    iframe {
+      width: 100%;
+    }
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: rgb(5, 5, 48);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 23%;
+    width: 100%;
+  }
+  
+  .foothead {
+    margin: 10px 0;
+  }
+  
+  .foothead h1 {
+    font-size: 24px;
+  }
+  
+  .footernav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .fn {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .fn p {
+    border: 1px solid grey;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .fn p:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    footer {
+      padding: 10px;
+      margin-top: 10%;
+    }
+  
+    .foothead h1 {
+      font-size: 20px;
+    }
+  
+    .fn p {
+      width: auto;
+      padding: 10px;
+    }
+  }
+  
